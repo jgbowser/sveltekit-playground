@@ -79,6 +79,13 @@ export type NamedAPIResource = {
   url: string;
 };
 
+export type NamedAPIResourceList = {
+  count: number;
+  next: string;
+  previous: string;
+  results: NamedAPIResource[];
+}
+
 export type VersionGameIndex = {
   game_index: number;
   version: NamedAPIResource;
